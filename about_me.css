@@ -6,9 +6,8 @@ html {
 } 
 
 body {
-    background-color: gray;
+    background-color:darkgrey;
 }
-
 
 .top-header {
     width: 100%;
@@ -61,7 +60,7 @@ nav .links{
 }
 
 nav .links a:hover{
-    background-color: #f39d1a
+    background-color: black;
 }
 
 nav .links a{
@@ -69,3 +68,17 @@ nav .links a{
     color: #fff;
     padding: 30px;
 }
+
+a:visited {
+    color: white;
+    font-family:"Amatic SC";
+    }
+      
+    a:hover {
+    color: white;
+    }
+      
+    a:active {
+    color: white;
+    font-family:"Amatic SC";
+    }

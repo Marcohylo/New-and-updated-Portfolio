@@ -5,10 +5,10 @@ html {
     min-height: 100%;
 } 
 
-body {
-    background-color: gray;
-}
 
+body {
+    background-color:darkgrey;
+}
 
 .top-header {
     width: 100%;
@@ -52,7 +52,7 @@ nav .links{
 }
 
 nav .links a:hover{
-    background-color: #f39d1a
+    background-color: black;
 }
 
 nav .links a{
@@ -62,7 +62,7 @@ nav .links a{
 }
 
 a:visited {
-color: green;
+color: white;
 font-family:"Amatic SC";
 }
   
@@ -71,7 +71,7 @@ color: white;
 }
   
 a:active {
-color:red;
+color: white;
 font-family:"Amatic SC";
 }
 

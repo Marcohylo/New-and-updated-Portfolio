@@ -6,8 +6,7 @@ html {
 } 
 
 body {
-    background-color: gray;
-    font-family: verdana;
+    background-color:darkgrey;
 }
 
 
@@ -19,6 +18,7 @@ body {
     text-shadow:1px 1px 0 rgba(0,0,0,.2);
     margin: 40px auto;
     text-align: center; 
+    text-shadow: 1px 1px 1px #000;
 }
 
 * {
@@ -52,7 +52,7 @@ nav .links{
 }
 
 nav .links a:hover{
-    background-color: #f39d1a
+    background-color: black;
 }
 
 nav .links a{
@@ -119,16 +119,34 @@ label {
     z-index: 99; 
     border: none;
     outline: none; 
-    background-color: red; 
+    background-color: black; 
     color: white; 
     cursor: pointer; 
     padding: 15px; 
     border-radius: 10px; 
     font-size: 18px;
   }
-  
-  #myBtn:hover {
-    background-color: #555; 
+
 }
 
-.links
+nav .links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
+
+a:visited {
+    color: white;
+    font-family:"Amatic SC";
+}
+      
+a:hover {
+    color: white;
+}
+      
+a:active {
+    color: white;
+    font-family:"Amatic SC";
+    border
+}
+
