@@ -58,7 +58,7 @@ nav .links a:hover{
 nav .links a{
     text-decoration: none;
     color: #fff;
-    padding: 30px;
+    padding: 22px;
 }
 
 a:visited {
@@ -99,7 +99,7 @@ div.gallery {
     color: #fffdd0;
     text-shadow: 1px 1px 1px #000;
     font-size: 30px;
-    text-align: center
+    text-align: center;
 }
 
 .linky2 {
