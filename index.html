@@ -4,39 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About me</title>
+    <title>Marco | Portfolio</title>
     <script src="https://kit.fontawesome.com/f8801e2d74.js"></script>
     <link rel="stylesheet" href="./style.css">
-    <title>transparent navigation bar</title>
-
+    
 </head>
+
+<!---HEADER-->
 <body>
-    <nav>
+    <nav id="navbar">
         <div class="icons">
-            <span style="font-size: 2em; color:#fffdd0;">
+            <span style="font-size: 1.5em; color:#fffdd0;">
                 <i class="fas fa-chess-rook"></i>
             </span>
         </div>
         <div class="links">
-            <a href="./index.html">Home</a>
-            <a href="./about_me.html">About me</a>
-            <a href="./projects.html">Projects</a>
-            <a href="./contact.html">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
-        
-    
+
+<!---HOME-->
+<section id="home">
     <h1>
     <a href="https://www.linkedin.com/in/marcolotrx/" class="typewrite" data-period="2000" data-type='[ "Hi, Im Marco Lo.", "I am Creative.", "I Love to Design.", "I Love to Develop." ]'>
-      <span class="wrap"></span>
+    <span class="wrap"></span>
     </a>
     </h1>    
     
-    <div id="main">
-        
-    </div>
+    <a href="#about">
+        <img src="img/pfeil.png" alt="pfeil">
+    </a>
+</section>
 
-<script>var TxtType = function(el, toRotate, period) {
+<!---ABOUT-->
+<section id="about">
+    <h3>About</h3>
+    <hr>
+    <img src="avatar3.png" alt="Avatar">
+    <h4> Marco Lo </h4>
+    <p> random shit</p>
+</section>
+
+<!---PROJECTS-->
+<section id="projects">
+    <ul>
+        <li><a href="#"><img src="img/project_01" alt="Project_01"></a></li>
+        <li><a href="#"><img src="img/project_02" alt="Project_02"></a></li>
+        <li><a href="#"><img src="img/project_03" alt="Project_03"></a></li>
+    </ul>
+    <hr>
+</section>
+
+<!---CONTACT-->
+<section id = "contact">
+    <h3>Contact</h3>
+    <hr>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/marco1993@live.com" method="post">
+        <!-- <fieldset id="fs-frm-inputs"> -->
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Please insert message here" required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        <!-- </fieldset> -->
+        <input type="submit" value="Submit" id="submit-button">
+      </form>
+    </section>
+
+    <footer>
+        <div class ="logo">
+            <a href="https://github.com/Marcohylo"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/marcolotrx"><i class="fab fa-linkedin-in"></i></a>
+            </div> 
+            <h4 style="font-family":calibri> &copy; All rights reserved. </h4>
+            </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<script>
+
+    var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
@@ -91,11 +162,17 @@ window.onload = function() {
     css.type = "text/css";
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
-};</script>
+};
+</script>
 
+<script>
 
-
-
+  window.onscroll = () => {
+    const nav = document.querySelector('#navbar');
+    if(this.scrollY <= 600) nav.className = ''; else nav.className = 'scroll';
+  };
+  
+</script>
 </body>
 </html>
 
