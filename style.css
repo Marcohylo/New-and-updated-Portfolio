@@ -138,13 +138,13 @@ img {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 
 }
 
 #projects{
-    width: 60%; 
+    width: 50%; 
     margin: 0 auto 0 auto;
 }
 
 #projects img{
-    width: 20%;
-    height: 15%;
+    width: 150%;
+    height: 150%;
     border-radius: 5px;
 }
 
@@ -161,9 +161,10 @@ img {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 
 }
 
 #projects ul li{
-    width: 33.3%;
-    float: left;
-    margin-bottom: 15px;
+    float: center;
+    width: 50%;
+    margin-left: 12%;
+    margin-bottom: 24px;
 }
 
 nav {
@@ -232,9 +233,9 @@ nav .links a{
 }
 
 .langimg {
-    margin-left: 2.5%;
-    margin-top: 15%;
+    float: center;
     width: 95%;
+    margin-left: 2.5%;
 }
 
 .parallax {
@@ -267,11 +268,16 @@ footer.second {
     background-color: #3f3f3f;
 }
 
+label {
+text-align: initial;
+
+}
+
 form {
     display: flex;
     justify-content: flex-start;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
     margin-top: 20px;
     margin-left: 250px;
