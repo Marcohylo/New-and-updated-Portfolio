@@ -32,12 +32,16 @@
     <a href="https://www.linkedin.com/in/marcolotrx/" class="typewrite" data-period="2000" data-type='[ "Hi, Im Marco Lo.", "I am Creative.", "I Love to Design.", "I Love to Develop." ]'>
     <span class="wrap"></span>
     </a>
-    </h1>    
-    
-    <a href="#about">
-        <img src="img/pfeil.png" alt="pfeil">
-    </a>
-</section>
+    </h1>   
+
+<div class="img"> <a href="#about">
+    <i class="fas fa-angle-double-down bounce" fa-10x ></i> 
+    </a></div> 
+
+</section>    
+ 
+   
+
 
 <!---ABOUT-->
 <section id="about">
@@ -77,11 +81,13 @@
     </section>
 
     <footer>
-        <div class ="logo">
+  
+            <div>
+            <h5 style="font-family":calibri> &copy; All rights reserved. </h5>
+            </div>       
+            <div class ="logo">
             <a href="https://github.com/Marcohylo"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/marcolotrx"><i class="fab fa-linkedin-in"></i></a>
-            </div> 
-            <h4 style="font-family":calibri> &copy; All rights reserved. </h4>
             </div>
     </footer>
 
@@ -171,7 +177,16 @@ window.onload = function() {
     const nav = document.querySelector('#navbar');
     if(this.scrollY <= 600) nav.className = ''; else nav.className = 'scroll';
   };
-  
+
+</script>
+
+<script>
+    var scrollEventHandler = function()
+{
+  window.scroll(0, window.pageYOffset)
+}
+
+window.addEventListener("scroll", scrollEventHandler, false);
 </script>
 </body>
 </html>
