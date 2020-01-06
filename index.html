@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/f8801e2d74.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link href="css/font-awesome.min.css" rel="stylesheet"/>
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="/mlogo.png">
 
 </head>
 
@@ -27,6 +27,7 @@
             <a href="#contact">Contact</a>
         </div>
     </nav>
+
 
 <!---HOME-->
 <section id="home">
@@ -48,14 +49,14 @@
     <h3>About</h3>
     <hr>
     <img src="avatar3.png" alt="Avatar">
-    <h4> Marco Lo </h4>
+    <h4 style="font-size:2vw"> Marco Lo </h4>
     
-    <p> "An aspiring software developer, born and raised in Melbourne." </p>
+    <p style="font-size:2vw;"> "An aspiring software developer, born and raised in Melbourne." </p>
     <br>
-    <p>I am currently a full time philomath studying at Coder Academy, doing a fast track bootcamp.</p>
-    <p>I've had extensive experience working in stressful team settings and love to create things from scratch.</p>
-    <p>It is my dream to be able to use my creativity and skills to change the world for the better.</p>
-    <p>Displayed below are tech skills that are part of my skillset.</p>
+    <p style="font-size:2vw;">I am currently a full time philomath studying at Coder Academy, doing a fast track bootcamp.</p>
+    <p style="font-size:2vw;">I've had extensive experience working in stressful team settings and love to create things from scratch.</p>
+    <p style="font-size:2vw;">It is my dream to be able to use my creativity and skills to change the world for the better.</p>
+    <p style="font-size:2vw;">Displayed below are tech skills that are part of my skillset.</p>
     
     <div class="langimg">
         <img src="l2.jpeg">
@@ -67,7 +68,7 @@
 
     <h3>Projects<h3>
     <hr>
-    <h1>Click on any projects below to go to their respective github repositories.</h1>
+    <h1 style="font-size:2vw;">Click on any projects below to go to their respective github repositories.</h1>
     <br>
     
     <div id="projects">
@@ -78,6 +79,8 @@
     </ul>
 </div>
 </section>
+
+<button onclick="topFunction()" id="myBtn2" title="Go to top">Top</button>
 
 <!---CONTACT-->
 <section id = "parallax">
@@ -123,26 +126,28 @@
         <h7 style="font-family":calibri> &copy; All rights reserved. </h7>     
     </footer>
 
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+</script>
 
 <script>
 
@@ -213,14 +218,7 @@ window.onload = function() {
 
 </script>
 
-<!-- <script>
-    var scrollEventHandler = function()
-{
-  window.scroll(0, window.pageYOffset)
-}
 
-window.addEventListener("scroll", scrollEventHandler, false);
-</script> -->
 </body>
 </html>
 
