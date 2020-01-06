@@ -369,6 +369,20 @@ nav .links a{
     margin: auto auto;
 }
 
+input#sub{
+    padding: 5px;
+    font: "Amatic SC";
+    width: 10%;
+    height: 10%;
+    border-radius: 20px;
+    background: black;
+    color: white;
+}
+
+input#sub:hover {
+    background-color:#404040;
+    opacity: 1;
+}
 
 #myBtn2:hover {
     background-color: black; /* Add a dark-grey background on hover */
