@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
 
 html { scroll: smooth}
-html, body {margin: 0; padding: 0; height: 100vh; max-width: 100vw; text-align: center;} 
+html, body {margin: 0; padding: 0; height: 100%; max-width: 100%; text-align: center;} 
 
 section {
     min-height: 100%;
@@ -131,6 +131,12 @@ img {transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 
 
 #about p {
     margin: 0 auto 0 auto;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#project p {
+    font-family: 'Josefin Sans', sans-serif;
+
 }
 
 
@@ -365,8 +371,11 @@ nav .links a{
 }
 
 .font-shrink {
-    font-size: 25px;
+    font-size: 16px;
     margin: auto auto;
+}
+.fontamatic {
+    font-family: 'Amatic SC';
 }
 
 input#sub{
